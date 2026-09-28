@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "telegram-bot-manager"
+version = "1.0.0"
+description = "Cross-platform Telegram Bot Management CLI and SDK with safe per-project caching"
+readme = "README.md"
+authors = [{ name = "Amin Fallah" }]
+license = { text = "MIT" }
+requires-python = ">=3.8"
+keywords = ["telegram", "bot", "cli", "antigravity", "automation", "webhook"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Communications :: Chat",
+]
+dependencies = []
+
+[project.scripts]
+telegram-bot = "telegram_cli:main"
+telegram-cli = "telegram_cli:main"
+
+[tool.setuptools.package-dir]
+"" = "scripts"
